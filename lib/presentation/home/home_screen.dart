@@ -28,7 +28,7 @@ class HomeScreen extends StatelessWidget {
         title: Text(StringsManager.ecommerceApp,style: Appstyle.large30(context),),
         actions: [
 
-          Image.asset('assets/images/3_home&bottoms/ill-vent (1) 1.png' ),
+
         ],
       )
           : null,
