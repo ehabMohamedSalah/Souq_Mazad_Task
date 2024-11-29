@@ -19,13 +19,13 @@ class HomeScreen extends StatelessWidget {
       appBar: MediaQuery.sizeOf(context).width < SizeConfig.tablet
           ? AppBar(
         elevation: 0,
-        backgroundColor:   ColorManager.secondaryColor,
+        backgroundColor:   ColorManager.primaryColor,
         leading: IconButton(
             onPressed: () {
               scaffoldKey.currentState!.openDrawer();
             },
             icon: const Icon(Icons.menu,color: Colors.white,size:37 ,)),
-        title: Text(StringsManager.ecommerceApp,style: Appstyle.large30(context),),
+        title: Text(StringsManager.ecommerceApp,style: Appstyle.medium25(context),),
         actions: [
 
 

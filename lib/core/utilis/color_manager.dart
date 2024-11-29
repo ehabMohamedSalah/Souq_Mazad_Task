@@ -1,12 +1,9 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 
-class ColorManager{
-  static const Color primaryColor=Color(0xff2B4587);
-  static const Color headlineColor=Color(0xff3B41C9);
-  static const Color secondaryColor=Color(0xff0C6980);
-  static const Color white=Colors.white;
-  static const Color black=Colors.black;
-  static const Color categoriesBackgroundColor = Color(0xffDBE4ED);
+class ColorManager {
+  static const Color primaryColor = Color(0xFF009688); // Teal color
+  static const Color accentColor = Color(0xFF4CAF50);  // Green accent color
+  static const Color backgroundColor = Color(0xFFF5F5F5); // Light background
+  static const Color textColor = Color(0xFF212121);  // Dark text
+  static const Color subtitleColor = Color(0xFF757575); // Light text
 }

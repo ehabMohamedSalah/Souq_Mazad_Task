@@ -30,8 +30,8 @@ class _HomeMobileLayoutState extends State<HomeMobileLayout> {
       backgroundColor:  ColorManager.primaryColor,
       bottomNavigationBar: CurvedNavigationBar(
         index: 0,
-        backgroundColor:   ColorManager.white,
-        color:  ColorManager.secondaryColor,
+        backgroundColor:   ColorManager.primaryColor,
+        color:  ColorManager.primaryColor,
         items: <Widget>[
           Icon(Icons.home, size: 30),
           Icon(Icons.category_rounded, size: 30),

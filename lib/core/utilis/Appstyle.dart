@@ -6,61 +6,38 @@ import 'color_manager.dart';
 
 abstract class Appstyle{
 
-  static TextStyle smallLabelText(BuildContext context) {
-    return TextStyle(
-      color: Colors.black,
-      fontSize: getResponsiveFontSize(context, fontSize: 20),
-      fontFamily: 'Montserrat',
-      fontWeight: FontWeight.w700,
-    );
-  }
-
-  static TextStyle small20(BuildContext context) {
-    return TextStyle(
-      fontWeight: FontWeight.w400,
-      color: Colors.black,
-      fontSize: getResponsiveFontSize(context, fontSize: 20),
-    );
-  }
-  static TextStyle small15(BuildContext context) {
-    return TextStyle(
-      fontWeight: FontWeight.w700,
-      color: Colors.white,
-      overflow:TextOverflow.ellipsis ,
-      fontSize: getResponsiveFontSize(context, fontSize: 15),
-    );
-  }
-  static TextStyle VerySmall15(BuildContext context) {
-    return TextStyle(
-      fontWeight: FontWeight.w700,
-      color: Colors.black,
-      overflow:TextOverflow.ellipsis ,
-      fontSize: getResponsiveFontSize(context, fontSize: 10),
-    );
-  }
-
   static TextStyle medium25(BuildContext context) {
     return TextStyle(
-      fontWeight: FontWeight.w700,
-      color: ColorManager.black,
-      fontSize: getResponsiveFontSize(context, fontSize: 25),
+      fontSize: 25,
+      fontWeight: FontWeight.bold,
+      color: ColorManager.textColor,  // Consistent text color
     );
   }
-  static TextStyle large30(BuildContext context) {
+
+  // Small label text style
+  static TextStyle smallLabelText(BuildContext context) {
     return TextStyle(
-        fontSize: getResponsiveFontSize(context, fontSize: 30),
-        color: ColorManager.black,
-        fontWeight: FontWeight.w700
+      fontSize: 16,
+      fontWeight: FontWeight.w500,
+      color: ColorManager.textColor,  // Consistent text color
     );
   }
-  static TextStyle labelRegisterStyle(BuildContext context) {
+
+  // Price text style
+  static TextStyle small20(BuildContext context) {
     return TextStyle(
+      fontSize: 20,
+      fontWeight: FontWeight.bold,
+      color: ColorManager.primaryColor,  // Primary color for price
+    );
+  }
 
-      fontSize: getResponsiveFontSize(context, fontSize: 15),
-      color: ColorManager.black,
-      fontWeight: FontWeight.w700,
-      overflow: TextOverflow.ellipsis,
-
+  // Title text style for details
+  static TextStyle medium20(BuildContext context) {
+    return TextStyle(
+      fontSize: 20,
+      fontWeight: FontWeight.bold,
+      color: ColorManager.textColor,  // Consistent text color
     );
   }
 

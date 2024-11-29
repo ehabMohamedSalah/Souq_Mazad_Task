@@ -7,6 +7,7 @@ import '../datasource_contract/product_datasource_contract.dart';
 
 @Injectable(as: ProductRepoContract)
 class ProductRepoImpl extends ProductRepoContract{
+  @factoryMethod
   ProductDatasourceContract productDatasource;
   ProductRepoImpl(this.productDatasource);
   @override
