@@ -17,8 +17,8 @@ abstract class Appstyle{
 
   static TextStyle small20(BuildContext context) {
     return TextStyle(
-      fontWeight: FontWeight.w700,
-      color: Colors.white,
+      fontWeight: FontWeight.w400,
+      color: Colors.black,
       fontSize: getResponsiveFontSize(context, fontSize: 20),
     );
   }
@@ -33,7 +33,7 @@ abstract class Appstyle{
   static TextStyle VerySmall15(BuildContext context) {
     return TextStyle(
       fontWeight: FontWeight.w700,
-      color: Colors.white38,
+      color: Colors.black,
       overflow:TextOverflow.ellipsis ,
       fontSize: getResponsiveFontSize(context, fontSize: 10),
     );
@@ -42,14 +42,14 @@ abstract class Appstyle{
   static TextStyle medium25(BuildContext context) {
     return TextStyle(
       fontWeight: FontWeight.w700,
-      color: ColorManager.white,
+      color: ColorManager.black,
       fontSize: getResponsiveFontSize(context, fontSize: 25),
     );
   }
   static TextStyle large30(BuildContext context) {
     return TextStyle(
         fontSize: getResponsiveFontSize(context, fontSize: 30),
-        color: ColorManager.white,
+        color: ColorManager.black,
         fontWeight: FontWeight.w700
     );
   }
@@ -57,7 +57,7 @@ abstract class Appstyle{
     return TextStyle(
 
       fontSize: getResponsiveFontSize(context, fontSize: 15),
-      color: ColorManager.white,
+      color: ColorManager.black,
       fontWeight: FontWeight.w700,
       overflow: TextOverflow.ellipsis,
 

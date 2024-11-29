@@ -1,4 +1,5 @@
 import 'package:device_preview/device_preview.dart';
+import 'package:e_commerce_task/Domain_layer/usecase/ProductsUsecase.dart';
 import 'package:e_commerce_task/data_layer/repo/product_repo.dart';
 import 'package:e_commerce_task/presentation/home/Tabs/ProductList_tab/ProductList_screen.dart';
 import 'package:e_commerce_task/presentation/home/home_screen.dart';
@@ -15,10 +16,7 @@ import 'core/utilis/routes_manager.dart';
 void main() => runApp(
   DevicePreview(
     enabled: !kReleaseMode,
-    builder: (context) => BlocProvider(
-      create: (context) => ProductBloc(ProductRepository())..add(FetchProductsEvent()),
-      child: MyApp(),
-    ), // Wrap your app
+    builder: (context) => MyApp(), // Wrap your app
   ),
 );
 
@@ -37,6 +35,7 @@ class MyApp extends StatelessWidget {
       routes: {
         RouteManager.homeScreenRoutes: (context) => HomeScreen(),
         RouteManager.productListScreen: (_) => ProductListScreen(),
+
 
       },
       theme:AppTheme.lightTheme ,
